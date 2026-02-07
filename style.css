@@ -1,0 +1,469 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+   
+
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color: #221314;
+    --second-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1.2rem;
+
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 18%;
+    background: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
+    backdrop-filter: blur(10px); /* Blurred background effect */
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--bg-color);
+    
+}
+
+.navbar {
+    display: flex;
+    
+}
+
+.navbar a {
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    float: right;
+    display: block;
+    
+   
+}
+
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 30px rgb(214, 214, 214),
+             0 0 50px rgb(210, 210, 210);
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    
+}
+
+#menu-icon{
+    color: var(--bg-color);
+    font-size: 50px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+
+}
+
+section {
+    padding: 80px 18%
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(paradise.jpg);
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin-top: -25px;
+}
+
+.home-text {
+    color: #ffffff;
+    
+    
+}
+
+.home-text h1 {
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.home-text p {
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.home-text button {
+    color: #ffffff;
+    background-color: #ffffff75;
+    font-size: 20px;
+    border: 5px solid white;
+    border-radius: 4px;
+    border-color: #fff;
+    border-style: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.home-text button:hover {
+    color: rgb(53, 128, 225);
+    text-shadow: 0 0 30px rgb(255, 255, 255),
+             0 0 50px rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    background-color: #fff;
+}
+.text h1 {
+   font-size: 45px; 
+}
+.row-items {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+   grid-gap: 2 rem;
+   align-items: center;
+   text-align: center;
+   margin-top: 5rem;
+   padding-bottom: 120px;
+
+
+}
+.container-box {
+    border: 2px solid rgba(109, 109, 109, 0.232);
+    padding: 50px 10px;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+    
+    
+}
+.container img {
+    height: 70px;
+    
+}
+
+.container img img {
+    height: 8px;
+}
+
+.container-box:hover {
+    color: wrgb(149, 30, 229);
+    text-shadow: 0 0 30px rgb(255, 255, 255),
+             0 0 50px rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    background-color: #ffffff;
+}
+
+.package-row-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2 rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    padding-left: 60px;
+    margin-bottom: 50px;
+    
+
+    
+ 
+ 
+ }
+ .package-container-box {
+     border: 2px solid rgb(255, 255, 255);
+     padding: 0px 0px;
+     border-radius: 8px;
+     margin: 10px;
+     cursor: pointer;
+     height: 453px;
+     width: 256px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+     
+     
+     
+     
+     
+ }
+ .package-container img {
+     height: 450px;
+     border-radius: 7px;
+     
+ }
+ 
+ .package-container img img {
+     height: 8px;
+ }
+ 
+ .package-container-box:hover {
+     color: wrgb(149, 30, 229);
+     text-shadow: 0 0 30px rgb(255, 255, 255),
+              0 0 50px rgb(255, 255, 255);
+     transform: scale(1.1);
+     transition: 0.3s ease;
+     background-color: #ffffff;
+ }
+
+
+ .destination-row-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+    grid-gap: 2 rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    padding-left: 60px;
+    margin-bottom: 50px;
+    
+    
+
+    
+ 
+ 
+ }
+ .destination-container-box {
+     border: 2px solid rgb(255, 255, 255);
+     padding: 0px 0px;
+     border-radius: 8px;
+     margin: 10px;
+     cursor: pointer;
+     height: 453px;
+     width: 256px;
+     margin-bottom: 50px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+     
+     
+     
+     
+     
+ }
+ .destination-container img {
+     height: 450px;
+     border-radius: 7px;
+     
+ }
+ 
+ .destination-container img img {
+     height: 8px;
+ }
+ 
+ .destination-container-box:hover {
+     color: wrgb(149, 30, 229);
+     text-shadow: 0 0 30px rgb(255, 255, 255),
+              0 0 50px rgb(255, 255, 255);
+     transform: scale(1.1);
+     transition: 0.3s ease;
+     background-color: #ffffff;
+ }
+
+ .paradise {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(bali.jpg);
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin-top: -25px;
+}
+
+.paradise-text {
+    color: #ffffff;
+    
+    
+}
+
+.paradise-text h1 {
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.paradise-text p {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    
+}
+
+.enjoy {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin-top: -25px;
+}
+
+.enjoy-text {
+    color: #000000;
+    
+    
+}
+
+.enjoy-text h1 {
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.enjoy-text p {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    
+}
+
+.city {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(san\ francisco.jpg);
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin-top: -25px;
+}
+
+.city-text {
+    color: #ffffff;
+    position: absolute;
+    padding-left: 600px;
+    text-align: right;
+    
+    
+    
+}
+
+.city-text h1 {
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.city-text p {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #008fc4;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signupform {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+.signup-container {
+    background: rgb(214, 246, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+.login-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
